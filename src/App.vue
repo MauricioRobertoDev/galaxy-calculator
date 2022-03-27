@@ -1,12 +1,12 @@
 <template>
-    <div class="h-screen w-screen flex justify-center items-center">
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <Galaxy />
 </template>
 
 <script>
-export default {};
+import Galaxy from "./pages/Galaxy.vue";
+export default {
+    components: {
+        Galaxy,
+    },
+};
 </script>
-
-<style>
-</style>
