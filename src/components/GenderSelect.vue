@@ -1,7 +1,7 @@
 <template>
     <div
         class="
-            absolute
+            fixed
             right-8
             bottom-8
             z-50
@@ -15,10 +15,19 @@
         "
     >
         <div class="py-1">F</div>
-        <div class="h-12 w-6 p-1 bg-primary-500 rounded-full relative">
-            <button
-                v-on:click.prevent.stop="toggleGender()"
-                type="button"
+        <div
+            v-on:click.prevent.stop="toggleGender()"
+            class="
+                h-12
+                w-6
+                p-1
+                bg-primary-500
+                rounded-full
+                relative
+                cursor-pointer
+            "
+        >
+            <div
                 class="
                     absolute
                     h-4
@@ -31,7 +40,7 @@
                 v-bind:class="{
                     'translate-y-6': modelValue === 'M',
                 }"
-            ></button>
+            ></div>
         </div>
         <div class="py-1">M</div>
     </div>

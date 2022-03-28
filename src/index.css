@@ -5,3 +5,7 @@
 .input-base {
     @apply h-10 px-4 w-full grow rounded-lg text-gray-700 placeholder-gray-400 border border-gray-300 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 disabled:bg-gray-100 disabled:cursor-not-allowed
 }
+
+.filter-button {
+    @apply flex flex-col gap-4 items-center justify-center text-sm text-gray-500 border rounded-lg p-2 hover:bg-gray-200
+}
