@@ -17,7 +17,7 @@
             <div
                 class="w-full px-6 py-8 rounded-lg bg-white shadow-md space-y-8"
             >
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <!-- current authority -->
                     <div class="w-full">
                         <div class="text-sm text-gray-500">

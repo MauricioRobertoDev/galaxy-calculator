@@ -1,10 +1,6 @@
 <template>
-    <div class="p-4 grid grid-cols-2 lg:grid-cols-3 gap-4">
-        <div
-            v-for="goal in goals"
-            v-bind:key="goal.id"
-            class="border rounded-lg"
-        >
+    <div class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div v-for="goal in goals" v-bind:key="goal.id" class="border rounded-lg">
             <div class="flex gap-4 items-center p-4">
                 <img v-bind:src="goal.img" class="h-20 w-20" />
                 <div>
@@ -40,7 +36,7 @@ export default {
                 type: "gold",
                 value: 25,
                 img: "https://i.ibb.co/7WXSNmB/gball-25.png",
-                desc: "Gold mirando gold / 25 pontos cada acerto.",
+                desc: "Gold mirando ouro / 25 pontos cada acerto.",
             },
             gball_75: {
                 id: "gball_75",
@@ -61,28 +57,31 @@ export default {
                 type: "fire",
                 value: 150,
                 img: "https://i.ibb.co/74kX5wv/fball-150.png",
-                desc: "Fire mirando ouro / 150 pontos cada acerto.",
+                desc: "Fire mirando prata / 150 pontos cada acerto.",
             },
             xball_550: {
                 id: "xball_550",
                 type: "explosive",
                 value: 550,
                 img: "https://i.ibb.co/56nwpCS/xball-550.png",
-                desc: "Explosiva mirando 9 barris válidos / 550 pontos (raro) cada acerto.",
+                desc:
+                    "Explosiva mirando 9 barris válidos (raro) / 550 pontos cada acerto.",
             },
             xball_500: {
                 id: "xball_500",
                 type: "explosive",
                 value: 500,
                 img: "https://i.ibb.co/sytqkqm/xball-500.png",
-                desc: "Explosiva mirando 8 barris válidos / 500 pontos (médio) cada acerto.",
+                desc:
+                    "Explosiva mirando 8 barris válidos (médio) / 500 pontos cada acerto.",
             },
             xball_450: {
                 id: "xball_450",
                 type: "explosive",
                 value: 450,
                 img: "https://i.ibb.co/vx983xS/xball-450.png",
-                desc: "Explosiva mirando 7 barris válidos / 450 pontos (comum) cada acerto.",
+                desc:
+                    "Explosiva mirando 7 barris válidos (comum) / 450 pontos cada acerto.",
             },
         };
         return { goals };
@@ -94,6 +93,3 @@ export default {
     },
 };
 </script>
-
-<style>
-</style>
